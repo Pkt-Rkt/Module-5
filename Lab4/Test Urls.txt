@@ -1,0 +1,32 @@
+Get All Friends
+   URL: http://localhost:3000/friends
+
+Filter Friends by Gender
+   URL: http://localhost:3000/friends/filter?gender=<gender>
+
+Filter Friends by Starting Letter
+   URL: http://localhost:3000/friends/filter?letter=<letter>
+
+Get User-Agent, Content-Type, and Accept Headers
+   URL: http://localhost:3000/friends/info
+
+Get Friend by ID
+   URL: http://localhost:3000/friends/<friend_id>
+
+Add a New Friend
+   URL: http://localhost:3000/friends
+   Request Body:
+   {
+       "name": "<friend_name>",
+       "gender": "<friend_gender>",
+       "id": <friend_id>
+   }
+
+Update Existing Friend
+   URL: http://localhost:3000/friends/<friend_id>
+   Request Body:
+   {
+       "name": "<updated_name>",
+       "gender": "<updated_gender>",
+       "id": <friend_id>
+   }
