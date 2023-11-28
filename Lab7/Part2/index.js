@@ -15,15 +15,15 @@ const options = {
       version: '1.0.0',
     },
   },
-  apis: ['./routes/productRoutes.js'], // Adjust the path based on your project structure
+  apis: ['./routes/productRoutes.js'],
 };
 const specs = swaggerJsdoc(options);
 
 // Define routes
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
-app.use('/api', productRoutes); // Mount the productRoutes under the /api prefix
+app.use('/api', productRoutes);
 
-// Serve static files (e.g., your React app)
+// Serve static files
 app.use(express.static('public'));
 
 // Start the server
